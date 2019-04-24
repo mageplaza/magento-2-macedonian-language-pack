@@ -117,11 +117,13 @@ To download and install Macedonian pack manually, you have to access to your ser
 
 #### Step 1: Unzip and upload
 
-Unzip the compressed file and upload file `master.zip` into `app/i18n/Mageplaza/mk_mk/mk_MK.csv`
+Unzip the compressed file and upload file `master.zip` into `app/i18n/Mageplaza/mk_mk/`
 
-See this screenshot
+See this screenshot:
 
 ![Macedonian pack](https://cdn3.mageplaza.com/media/general/language-pack.png)
+
+This language pack code is: **mk_mk**
 
 #### Step 2: Flush cache
 
