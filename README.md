@@ -19,7 +19,7 @@ Read more [Magento 2 Macedonian Language Pack](https://www.mageplaza.com/magento
 
 This is status of Macedonian Language Pack, you can see how many percentage of this project has been done.
 
-![language pack](http://progressed.io/bar/16?title=translated)
+![language pack](http://progressed.io/bar/24?title=translated)
 
 It is not fully translated? Feel free to contribute:
 - [On Crowdin](https://crowdin.com/project/magento-2): It takes time to approve your contribution by Magento team.
@@ -40,6 +40,8 @@ Install the Macedonian language pack via composer is never easier.
 ```
 composer require mageplaza/magento-2-macedonian-language-pack:dev-master
 php bin/magento setup:static-content:deploy mk_MK
+php bin/magento indexer:reindex
+php bin/magento cache:clean
 php bin/magento cache:flush
 
 ```
@@ -50,6 +52,8 @@ php bin/magento cache:flush
 ```
 composer update mageplaza/magento-2-macedonian-language-pack:dev-master
 php bin/magento setup:static-content:deploy mk_MK
+php bin/magento indexer:reindex
+php bin/magento cache:clean
 php bin/magento cache:flush
 
 ```
@@ -89,8 +93,11 @@ Unzip the Macedonian language pack to Magento 2 root folder. In this guide, we e
 Your Magento 2 root folder can be: `/home/account_name/yourstore.com/public_html/`
 
 ```
-unzip master.zip app/i18n/Mageplaza/mk_mk
+unzip master.zip app/i18n/Mageplaza/
 ```
+
+Rename folder `magento-2-macedonian-language-pack` to `mk_mk`.
+
 
 You also can unzip locally and upload them to Magento 2 root folder.
 
@@ -110,14 +117,18 @@ To download and install Macedonian pack manually, you have to access to your ser
 
 #### Step 1: Unzip and upload
 
-Unzip the compressed file and upload file `mk_MK.zip` into `app/i18n/mageplaza/mk_MK/mk_MK.csv`
+Unzip the compressed file and upload file `master.zip` into `app/i18n/Mageplaza/mk_mk/mk_MK.csv`
+
+See this screenshot
+
+![Macedonian pack](https://cdn2.mageplaza.com/media/general2/tS668yC.png)
 
 #### Step 2: Flush cache
 
 Follow this guide to [Flush Cache on your Magento 2 store](https://www.mageplaza.com/kb/how-flush-enable-disable-cache.html)
 
 
-## 3. How to active Macedonian language pack 
+## 3. How to Active the Macedonian language pack 
 
 Now time to active the Macedonian language pack for your Magento 2 store. From Magento 2 admin panel, navigate to `Stores > Configuration > General > Locale Options`
 ![{{Magento 2 Macedonian language pack}}](https://cdn.mageplaza.com/media/general/aPSUA0l.png)
@@ -132,7 +143,7 @@ Contribute to this language at :
 
 ## 5. Supported Magento versions
 
-It supports all Magento 2 versions include [Magento 2 open-source](https://www.mageplaza.com/download-magento/) (Community), Magento 2 Commerce (EE).
+It supports all Magento 2 versions include [Magento 2 open-source](https://www.mageplaza.com/download-magento/) (Community), Magento 2 Commerce (EE), Magento Cloud, Magento B2B, Magento MSI.
 
 
 - Magento v2.0.x
